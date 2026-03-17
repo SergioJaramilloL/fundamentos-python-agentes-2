@@ -1,3 +1,4 @@
+## Creado por: Sergio Jaramillo (SergiJaramilloL)
 from datetime import date
 
 # Guardo las credenciales de autenticación en variables.
@@ -154,3 +155,5 @@ while True:
     # Condición final por defecto. Sí no encuentra ninguna coincidencia con los comandos reconocidos, se muestra un mensaje de error indicando que el comando no es reconocido.
     else:
         print("[Error] Comando no reconocido. Escribe uno de los comandos disponibles.")
+
+## Creado por: Sergio Jaramillo (SergiJaramilloL)

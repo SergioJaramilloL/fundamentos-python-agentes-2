@@ -30,19 +30,19 @@ La documentación interactiva Swagger UI estará disponible en `http://localhost
 
 ## Tabla de endpoints
 
-| Método | Ruta | Protegido | Descripción |
-|---|---|---|---|
-| `GET` | `/` | No | Verifica que el servidor está activo |
-| `GET` | `/agentes/` | No | Lista todos los agentes registrados |
-| `GET` | `/agente/{nombre}` | No | Devuelve un agente por nombre o 404 |
-| `POST` | `/agentes/` | **Sí** | Crea un agente nuevo |
-| `POST` | `/mensajes/` | No | Envía un mensaje entre agentes |
-| `GET` | `/mensajes/{nombre}` | No | Lee la bandeja de entrada de un agente |
-| `POST` | `/misiones/` | **Sí** | Crea una misión. Verifica que el agente asignado exista |
-| `GET` | `/misiones/{id}` | No | Devuelve una misión por id o 404 |
-| `GET` | `/agente/{nombre}/misiones` | No | Lista todas las misiones de un agente |
-| `POST` | `/misiones/{id}/completar` | **Sí** | Completa la misión y descuenta energía al agente |
-| `GET` | `/briefing/{nombre}` | No | Datos del agente + instrucción de una API externa |
+| Método | Ruta                        | Protegido | Descripción                                             |
+| ------ | --------------------------- | --------- | ------------------------------------------------------- |
+| `GET`  | `/`                         | No        | Verifica que el servidor está activo                    |
+| `GET`  | `/agentes/`                 | No        | Lista todos los agentes registrados                     |
+| `GET`  | `/agente/{nombre}`          | No        | Devuelve un agente por nombre o 404                     |
+| `POST` | `/agentes/`                 | **Sí**    | Crea un agente nuevo                                    |
+| `POST` | `/mensajes/`                | No        | Envía un mensaje entre agentes                          |
+| `GET`  | `/mensajes/{nombre}`        | No        | Lee la bandeja de entrada de un agente                  |
+| `POST` | `/misiones/`                | **Sí**    | Crea una misión. Verifica que el agente asignado exista |
+| `GET`  | `/misiones/{id}`            | No        | Devuelve una misión por id o 404                        |
+| `GET`  | `/agente/{nombre}/misiones` | No        | Lista todas las misiones de un agente                   |
+| `POST` | `/misiones/{id}/completar`  | **Sí**    | Completa la misión y descuenta energía al agente        |
+| `GET`  | `/briefing/{nombre}`        | No        | Datos del agente + instrucción de una API externa       |
 
 Los endpoints marcados como **Sí** requieren el header `X-API-KEY` con la clave configurada en `.env`.
 
